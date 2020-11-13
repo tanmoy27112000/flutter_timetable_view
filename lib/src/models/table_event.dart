@@ -8,6 +8,8 @@ class TableEvent {
 
   final TableEventTime end;
 
+  final String decription;
+
   final EdgeInsets padding;
 
   final EdgeInsets margin;
@@ -27,6 +29,7 @@ class TableEvent {
     this.padding: const EdgeInsets.all(10),
     this.margin,
     this.onTap,
+    this.decription,
     this.decoration,
     this.backgroundColor: const Color(0xCC2196F3),
     this.textStyle: const TextStyle(color: Colors.white),

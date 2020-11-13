@@ -40,7 +40,7 @@ class Utils {
   ) {
     List<TextSpan> text = [
       TextSpan(
-        text: event.title,
+        text: event.title + "\n",
         style: TextStyle(fontWeight: FontWeight.bold),
       ),
       TextSpan(
@@ -48,8 +48,9 @@ class Utils {
             Utils.hourFormatter(event.start.hour, event.start.minute) +
             ' - ' +
             Utils.hourFormatter(event.end.hour, event.end.minute) +
-            '\n\n',
+            '\n',
       ),
+      TextSpan(text: event.decription),
     ];
 
     bool exceedHeight;
