@@ -50,7 +50,7 @@ class Utils {
             Utils.hourFormatter(event.end.hour, event.end.minute) +
             '\n',
       ),
-      TextSpan(text: event.decription),
+      TextSpan(text: event.description),
     ];
 
     bool exceedHeight;
@@ -70,6 +70,13 @@ class Utils {
       }
 
       if (!_ellipsize(text)) {
+        text.clear();
+        text = [
+          TextSpan(
+            text: "...",
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
+        ];
         break;
       }
     }
