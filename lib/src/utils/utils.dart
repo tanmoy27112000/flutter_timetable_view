@@ -66,7 +66,7 @@ class Utils {
             ),
           ];
         }
-        // break;
+        break;
       }
 
       if (!_ellipsize(text)) {
