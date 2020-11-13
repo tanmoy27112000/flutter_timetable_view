@@ -66,17 +66,10 @@ class Utils {
             ),
           ];
         }
-        break;
+        // break;
       }
 
       if (!_ellipsize(text)) {
-        text.clear();
-        text = [
-          TextSpan(
-            text: "...",
-            style: TextStyle(fontWeight: FontWeight.bold),
-          ),
-        ];
         break;
       }
     }
