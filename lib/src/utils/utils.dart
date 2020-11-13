@@ -59,6 +59,12 @@ class Utils {
       if (exceedHeight == null || !exceedHeight) {
         if (exceedHeight == null) {
           text.clear();
+          text = [
+            TextSpan(
+              text: "...",
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+          ];
         }
         break;
       }
