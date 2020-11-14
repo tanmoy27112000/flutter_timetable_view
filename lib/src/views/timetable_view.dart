@@ -111,9 +111,13 @@ class _TimetableViewState extends State<TimetableView>
             height: widget.timetableStyle.timeItemHeight,
             decoration: BoxDecoration(
               border: Border(
+                right: BorderSide(
+                  color: widget.timetableStyle.timelineBorderColor,
+                  width: 0,
+                ),
                 top: BorderSide(
                   color: widget.timetableStyle.timelineBorderColor,
-                  width: 1,
+                  width: 0,
                 ),
               ),
               color: widget.timetableStyle.timelineItemColor,
