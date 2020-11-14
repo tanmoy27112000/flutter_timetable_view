@@ -113,7 +113,7 @@ class _TimetableViewState extends State<TimetableView>
               border: Border(
                 top: BorderSide(
                   color: widget.timetableStyle.timelineBorderColor,
-                  width: 0,
+                  width: 1,
                 ),
               ),
               color: widget.timetableStyle.timelineItemColor,
