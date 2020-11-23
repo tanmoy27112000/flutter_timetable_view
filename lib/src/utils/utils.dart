@@ -41,7 +41,7 @@ class Utils {
     List<TextSpan> text = [
       TextSpan(
         text: event.title + "\n",
-        style: TextStyle(fontWeight: FontWeight.bold),
+        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
       ),
       TextSpan(
         text: ' ' +
