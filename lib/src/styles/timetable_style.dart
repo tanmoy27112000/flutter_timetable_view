@@ -52,7 +52,7 @@ class TimetableStyle {
     this.timeItemTextColor: Colors.blue,
     this.laneWidth: 300,
     this.laneHeight: 70,
-    this.timeItemHeight: 60,
+    this.timeItemHeight: 40,
     this.timeItemWidth: 70,
     this.decorationLineHeight: 20,
     this.decorationLineDashWidth: 9,

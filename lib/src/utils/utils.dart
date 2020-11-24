@@ -43,13 +43,13 @@ class Utils {
         text: event.title + "\n",
         style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
       ),
-      TextSpan(
-        text: Utils.hourFormatter(event.start.hour, event.start.minute) +
-            ' - ' +
-            Utils.hourFormatter(event.end.hour, event.end.minute) +
-            '\n',
-      ),
-      TextSpan(text: event.description),
+      // TextSpan(
+      //   text: Utils.hourFormatter(event.start.hour, event.start.minute) +
+      //       ' - ' +
+      //       Utils.hourFormatter(event.end.hour, event.end.minute) +
+      //       '\n',
+      // ),
+      // TextSpan(text: event.description),
     ];
 
     bool exceedHeight;
