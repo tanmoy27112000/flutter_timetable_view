@@ -40,14 +40,14 @@ class Utils {
   ) {
     List<TextSpan> text = [
       TextSpan(
-        text: event.title + "\n",
-        style: TextStyle(fontWeight: FontWeight.normal, fontSize: 14),
-      ),
-      TextSpan(
         text: Utils.hourFormatter(event.start.hour, event.start.minute) +
             ' - ' +
             Utils.hourFormatter(event.end.hour, event.end.minute) +
             '\n',
+      ),
+      TextSpan(
+        text: event.title + "\n",
+        style: TextStyle(fontWeight: FontWeight.normal, fontSize: 14),
       ),
       // TextSpan(text: event.description),
     ];
